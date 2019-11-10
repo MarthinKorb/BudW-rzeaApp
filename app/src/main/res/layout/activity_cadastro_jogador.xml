@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroJogador">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="340dp"
+        android:layout_height="191dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/btnrounded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/budwarzea" />
+
+    <EditText
+        android:id="@+id/etNomeCadastroID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Insira o seu email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/etSenhaCadID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/etNomeCadastroID"
+        app:layout_constraintStart_toStartOf="@+id/etNomeCadastroID"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeCadastroID" />
+
+    <EditText
+        android:id="@+id/etConfSenhaCadID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Confirme a sua senha"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/etSenhaCadID"
+        app:layout_constraintStart_toStartOf="@+id/etSenhaCadID"
+        app:layout_constraintTop_toBottomOf="@+id/etSenhaCadID" />
+
+    <Button
+        android:id="@+id/btn_CadastrarJogID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btnrounded"
+        android:text="Cadastrar"
+        app:layout_constraintEnd_toEndOf="@+id/etConfSenhaCadID"
+        app:layout_constraintStart_toStartOf="@+id/etConfSenhaCadID"
+        app:layout_constraintTop_toBottomOf="@+id/etConfSenhaCadID" />
+</android.support.constraint.ConstraintLayout>
